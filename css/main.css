@@ -59,7 +59,8 @@
     right: 0vw; } }
 .full-svg {
   width: 100vw;
-  height: auto; }
+  height: auto;
+  box-shadow: 0px -3px 14px rgba(25, 0, 14, 0.75); }
   .full-svg img {
     width: 100%;
     height: auto; }
