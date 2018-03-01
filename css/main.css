@@ -42,5 +42,11 @@
   }*/
   100% {
     right: 0vw; } }
+.full-svg {
+  width: 100vw;
+  height: auto; }
+  .full-svg img {
+    width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */

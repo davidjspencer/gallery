@@ -50,3 +50,12 @@ body {
 	  }
 	}
 }
+
+.full-svg {
+	width: 100vw;
+	height: auto;
+	img {
+		width: 100%;
+		height:auto;
+	}
+}
