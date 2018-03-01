@@ -15,9 +15,9 @@ body {
 		width: auto;
 		height: 100%;
 
-		-webkit-animation:spin 1.2s linear;
-    -moz-animation:spin 1.2s linear;
-    animation:spin 1.2s linear;
+		-webkit-animation:spin 2s linear;
+    -moz-animation:spin 2s linear;
+    animation:spin 2s linear;
 	}
 
 	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -30,15 +30,15 @@ body {
 		transform: translateY(-50%);
 		width: 100%;
 		height: auto;
-		animation: slide 1.2s cubic-bezier(.03,.84,.26,.98);
+		animation: slide 2s cubic-bezier(.03,.84,.26,.98);
 	}
 	@keyframes slide {
 		0% {
 	    right: 150vw;
 	  }
-	  /*25% {
-	  	right: 5vw;
-	  }
+	  1% {
+	  	right: 150vw;
+	  }/*
 	  50% {
 	    right: 50vw;
 	  }
