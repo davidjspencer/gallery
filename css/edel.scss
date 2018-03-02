@@ -3,7 +3,7 @@ $height: 400px;
 
 $red: #c32123;
 $white: transparent;
-
+$name: nobile, sans-serif;
 @mixin center {
 	position: absolute;
 	top: 50%;
@@ -22,27 +22,42 @@ $white: transparent;
 	}
 
 	.html-text {
+
 		z-index: 100;
 		position: fixed;
 		width: auto;
-		top: 30%;
-		left: 15%;
+		top: 42.5%;
+		left: 5%;
+		transform: translateY(-50%);
 
 		.name {
+			padding: 1em;
+			opacity: 1;
 			position: relative;
-/*			font-family: $name;
-*/			transform: rotate(-45deg);
+			font-family: $name;
+			transform: rotate(-45deg);
 			color: white;
 			background: black;
+			text-transform: uppercase;
 
 			&::after {
 				position: absolute;
 				content: "Edelman";
-				font-size: 4em;
-				top: 100%;
-				left: -120%;
+				font-weight: bold;
+				font-size: 3em;
+				top: 90%;
+				left: -75%;
 				transform: rotate(90deg);
 				color: black;
+			}
+			&::before {
+				position: absolute;
+				content: "as HTML & CSS";
+				top: 100%;
+				left: 0%;
+				width: 50px;
+				height: 50px;
+				background: $red;
 			}
 		}
 	}
@@ -51,6 +66,7 @@ $white: transparent;
 	  align-items: center;
 	  justify-content: center;
 	  min-height: 100vh;
+	  margin-left: 20%;
 
 	  .outside {
 			position: relative;

@@ -87,28 +87,41 @@ body {
     z-index: 100;
     position: fixed;
     width: auto;
-    top: 30%;
-    left: 15%; }
+    top: 42.5%;
+    left: 5%;
+    transform: translateY(-50%); }
     .edel .html-text .name {
+      padding: 1em;
+      opacity: 1;
       position: relative;
-      /*			font-family: $name;
-      */
+      font-family: nobile, sans-serif;
       transform: rotate(-45deg);
       color: white;
-      background: black; }
+      background: black;
+      text-transform: uppercase; }
       .edel .html-text .name::after {
         position: absolute;
         content: "Edelman";
-        font-size: 4em;
-        top: 100%;
-        left: -120%;
+        font-weight: bold;
+        font-size: 3em;
+        top: 90%;
+        left: -75%;
         transform: rotate(90deg);
         color: black; }
+      .edel .html-text .name::before {
+        position: absolute;
+        content: "as HTML & CSS";
+        top: 100%;
+        left: 0%;
+        width: 50px;
+        height: 50px;
+        background: #c32123; }
   .edel .frame {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; }
+    min-height: 100vh;
+    margin-left: 20%; }
     .edel .frame .outside {
       position: relative;
       width: 650px;
