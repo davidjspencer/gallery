@@ -84,7 +84,7 @@ body {
     z-index: 100;
     position: fixed;
     width: auto;
-    top: 42.5%;
+    top: 35%;
     left: 10%;
     transform: translateY(-50%); }
     .edel .html-text .name {
@@ -98,11 +98,11 @@ body {
       text-transform: uppercase; }
       .edel .html-text .name::after {
         position: absolute;
-        content: "Edelman";
+        content: "Red Rectangle";
         font-weight: bold;
         font-size: 3em;
-        top: 90%;
-        left: -75%;
+        top: 122%;
+        left: -111%;
         transform: rotate(90deg);
         color: black; }
       .edel .html-text .name::before {
