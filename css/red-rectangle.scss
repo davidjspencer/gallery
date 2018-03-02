@@ -40,17 +40,7 @@ $name: nobile, sans-serif;
 				border-bottom: 6px solid white;
 			}
 
-			&::after {
-				position: absolute;
-				content: "Red Rectangle";
-				font-weight: bold;
-				font-size: 3em;
-				top: 122%;
-				left: -111%;
-				transform: rotate(90deg);
-				color: black;
-			}
-			&::before {
+			.swipe-red {
 				position: absolute;
 				font-variant: small-caps;
 				content: "as HTML & CSS";
@@ -61,6 +51,38 @@ $name: nobile, sans-serif;
 				padding: 1em;
 				background: $red;
 			}
+			.swipe-title {
+				position: absolute;
+				content: "Red Rectangle";
+				font-weight: bold;
+				font-size: 3em;
+				top: 122%;
+				left: -111%;
+				transform: rotate(90deg);
+				color: black;
+			}
+		}
+		.swipe-red-animation {
+			animation: swipe-red 1s cubic-bezier(.03,.84,.26,.98);
+		}
+		.swipe-title-animation {
+			animation: swipe-title 1s cubic-bezier(.03,.84,.26,.98);
+		}
+		@keyframes swipe-red {
+			0% {
+		    left: 1500%;
+		  }
+		  100% {
+		    left: 0%;
+		  }
+		}
+		@keyframes swipe-title {
+			0% {
+		    top: -1500%;
+		  }
+		  100% {
+		    top: 122%;
+		  }
 		}
 	}
 	.frame {

@@ -4,5 +4,8 @@ function animation() {
 
   circle.classList.add('circle-animation');
   scribble.classList.add('scribble-animation');
-  console.log('hello');
+
+
 }
+
+

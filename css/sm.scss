@@ -18,8 +18,9 @@
 			font-size: 1.2em;
 
 			.name {
-				&::before {
-
+				.swipe-red {
+					width: 100px;
+					height: 100px;
 				}
 			}
 		}

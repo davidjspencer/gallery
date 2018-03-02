@@ -98,16 +98,7 @@ body {
       text-transform: uppercase; }
       .edel .html-text .name span {
         border-bottom: 6px solid white; }
-      .edel .html-text .name::after {
-        position: absolute;
-        content: "Red Rectangle";
-        font-weight: bold;
-        font-size: 3em;
-        top: 122%;
-        left: -111%;
-        transform: rotate(90deg);
-        color: black; }
-      .edel .html-text .name::before {
+      .edel .html-text .name .swipe-red {
         position: absolute;
         font-variant: small-caps;
         content: "as HTML & CSS";
@@ -117,6 +108,29 @@ body {
         height: 80px;
         padding: 1em;
         background: #c32123; }
+      .edel .html-text .name .swipe-title {
+        position: absolute;
+        content: "Red Rectangle";
+        font-weight: bold;
+        font-size: 3em;
+        top: 122%;
+        left: -111%;
+        transform: rotate(90deg);
+        color: black; }
+    .edel .html-text .swipe-red-animation {
+      animation: swipe-red 1s cubic-bezier(0.03, 0.84, 0.26, 0.98); }
+    .edel .html-text .swipe-title-animation {
+      animation: swipe-title 1s cubic-bezier(0.03, 0.84, 0.26, 0.98); }
+@keyframes swipe-red {
+  0% {
+    left: 1500%; }
+  100% {
+    left: 0%; } }
+@keyframes swipe-title {
+  0% {
+    top: -1500%; }
+  100% {
+    top: 122%; } }
   .edel .frame {
     display: flex;
     align-items: center;
@@ -213,6 +227,9 @@ body {
       top: 15%;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+      .edel .html-text .name .swipe-red {
+        width: 100px;
+        height: 100px; } }
 
 /*# sourceMappingURL=main.css.map */
