@@ -82,7 +82,7 @@ body {
     box-sizing: border-box; }
   .edel .html-text {
     z-index: 100;
-    position: fixed;
+    position: absolute;
     width: auto;
     top: 35%;
     left: 10%;
@@ -196,5 +196,20 @@ body {
                 height: 92%;
                 border: 4px solid transparent;
                 background: #c32123; }
+
+/* RED RECTANGLE */
+@media only screen and (max-device-width: 819px) {
+  .edel {
+    border-left: none;
+    border-top: 40px groove #c32123; }
+    .edel .frame {
+      width: 100%;
+      margin-left: 0 !important;
+      margin-top: 10%;
+      box-shadow: 0 -5px 20px -5px rgba(25, 0, 14, 0.75); }
+    .edel .html-text {
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%); } }
 
 /*# sourceMappingURL=main.css.map */
