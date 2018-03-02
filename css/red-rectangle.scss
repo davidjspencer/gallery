@@ -41,6 +41,7 @@ $name: nobile, sans-serif;
 			}
 
 			.swipe-red {
+				opacity: 0;
 				position: absolute;
 				font-variant: small-caps;
 				content: "as HTML & CSS";
@@ -52,6 +53,7 @@ $name: nobile, sans-serif;
 				background: $red;
 			}
 			.swipe-title {
+				opacity: 0;
 				position: absolute;
 				content: "Red Rectangle";
 				font-weight: bold;
@@ -63,9 +65,11 @@ $name: nobile, sans-serif;
 			}
 		}
 		.swipe-red-animation {
+			opacity: 1 !important;
 			animation: swipe-red 1s cubic-bezier(.03,.84,.26,.98);
 		}
 		.swipe-title-animation {
+			opacity: 1 !important;
 			animation: swipe-title 1s cubic-bezier(.03,.84,.26,.98);
 		}
 		@keyframes swipe-red {
