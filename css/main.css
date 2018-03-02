@@ -109,11 +109,13 @@ body {
         color: black; }
       .edel .html-text .name::before {
         position: absolute;
+        font-variant: small-caps;
         content: "as HTML & CSS";
         top: 100%;
         left: 0%;
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 80px;
+        padding: 1em;
         background: #c32123; }
   .edel .frame {
     display: flex;
@@ -210,6 +212,7 @@ body {
     .edel .html-text {
       top: 15%;
       left: 50%;
-      transform: translateX(-50%); } }
+      transform: translateX(-50%);
+      font-size: 1.2em; } }
 
 /*# sourceMappingURL=main.css.map */

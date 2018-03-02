@@ -52,11 +52,13 @@ $name: nobile, sans-serif;
 			}
 			&::before {
 				position: absolute;
+				font-variant: small-caps;
 				content: "as HTML & CSS";
 				top: 100%;
 				left: 0%;
-				width: 50px;
-				height: 50px;
+				width: 100px;
+				height: 80px;
+				padding: 1em;
 				background: $red;
 			}
 		}
