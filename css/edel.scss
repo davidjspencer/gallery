@@ -1,0 +1,101 @@
+$width: 650px;
+$height: 400px;
+
+$red: #b02323;
+$white: transparent;
+
+@mixin center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.edel {
+	background: url('../img/parchmentBG.png');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+	div {
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.frame {
+		display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  min-height: 100vh;
+
+	  .outside {
+			position: relative;
+			width: $width;
+			height: $height;
+			border: 8px solid $red;
+
+			.top-edel,
+			.bottom-edel {
+				position: absolute;
+				content: "";
+				width: 35%;
+				height: 10%;
+				border: 1px solid $red;
+				left: 50%;
+				transform: translateX(-50%);
+				.inner-red {
+					width: 98%;
+					height: 90%;
+					margin: 1%;
+					background: $red;
+				}
+			}
+			.top-edel {
+				top:-13%;
+			}
+			.bottom-edel {
+				bottom: -13%;
+			}
+			.thick {
+				@include center;
+				content: "";
+				z-index: 5;
+				width: 96%;
+				height: 96%;
+				background: $white;
+				border: 50px solid $red;
+
+				.thin-outer {
+					@include center;
+					content: "";
+					z-index: 6;
+					width: 98%;
+					height: 96%;
+					border: 2px solid $red;
+
+					.outer-center {
+						@include center;
+						width: 30%;
+						height: 45%;
+						border: 2px solid $red;
+
+
+						.thick-center {
+							@include center;
+							width: 95%;
+							height: 95%;
+							border: 15px solid $red;
+
+							.center {
+								@include center;
+								width: 92%;
+								height: 92%;
+								border: 4px solid $white;
+								background: $red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
