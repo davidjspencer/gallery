@@ -11,10 +11,7 @@ $name: nobile, sans-serif;
 	transform: translate(-50%,-50%);
 }
 .edel {
-	background: url('../img/parchmentBG.png');
-	background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	border-left: 40px groove $red;
 
 	div {
 		display: inline-block;
@@ -66,7 +63,12 @@ $name: nobile, sans-serif;
 	  align-items: center;
 	  justify-content: center;
 	  min-height: 100vh;
-	  margin-left: 20%;
+	  margin-left: calc(20% - 40px);
+
+	  background: url('../img/parchmentBG.png');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 	  .outside {
 			position: relative;

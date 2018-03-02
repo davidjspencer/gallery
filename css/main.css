@@ -76,10 +76,7 @@ body {
     margin-bottom: -15px; }
 
 .edel {
-  background: url("../img/parchmentBG.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  border-left: 40px groove #c32123; }
   .edel div {
     display: inline-block;
     box-sizing: border-box; }
@@ -121,7 +118,11 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin-left: 20%; }
+    margin-left: calc(20% - 40px);
+    background: url("../img/parchmentBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
     .edel .frame .outside {
       position: relative;
       width: 650px;
