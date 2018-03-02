@@ -1,7 +1,7 @@
 $width: 650px;
 $height: 400px;
 
-$red: #b02323;
+$red: #c32123;
 $white: transparent;
 
 @mixin center {
@@ -21,6 +21,31 @@ $white: transparent;
 		box-sizing: border-box;
 	}
 
+	.html-text {
+		z-index: 100;
+		position: fixed;
+		width: auto;
+		top: 30%;
+		left: 15%;
+
+		.name {
+			position: relative;
+/*			font-family: $name;
+*/			transform: rotate(-45deg);
+			color: white;
+			background: black;
+
+			&::after {
+				position: absolute;
+				content: "Edelman";
+				font-size: 4em;
+				top: 100%;
+				left: -120%;
+				transform: rotate(90deg);
+				color: black;
+			}
+		}
+	}
 	.frame {
 		display: flex;
 	  align-items: center;
