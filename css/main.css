@@ -124,7 +124,8 @@ body {
     background: url("../img/parchmentBG.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    box-shadow: 0 0 30px -5px rgba(25, 0, 14, 0.9); }
     .edel .frame .outside {
       position: relative;
       width: 650px;
